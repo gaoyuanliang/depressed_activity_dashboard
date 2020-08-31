@@ -33,35 +33,6 @@ os.system(u"rm -r temp*.json")
 sqlContext.read.json('activity_data.json').registerTempTable('activity_data')
 sqlContext.read.format('csv').option('header', 'true').load('data/scores.csv').registerTempTable('scores')
 
-'''
-sqlContext.sql(u"""
-	SELECT 
-	activity_data.activity,
-	activity_data.date,
-	activity_data.file_name,
-	activity_data.label,
-	activity_data.person_id,
-	CONCAT(SPLIT(activity_data.timestamp, ' ')[0], 'T',
-	SPLIT(activity_data.timestamp, ' ')[1],
-	'+00:00') AS timestamp
-	FROM activity_data
-	""").show(100, False)
-
-sqlContext.sql(u"""
-	SELECT 
-	activity_data.*,
-	scores.*
-	FROM activity_data
-	LEFT JOIN scores
-	ON scores.number = activity_data.person_id
-	ORDER BY person_id ASC
-	""").show()
-'''
-
-'''
-It contains the following columns; number (patient identifier), days (number of days of measurements), gender (1 or 2 for female or male), age (age in age groups), afftype (1: bipolar II, 2: unipolar depressive, 3: bipolar I), melanch (1: melancholia, 2: no melancholia), inpatient (1: inpatient, 2: outpatient), edu (education grouped in years), marriage (1: married or cohabiting, 2: single), work (1: working or studying, 2: unemployed/sick leave/pension), madrs1 (MADRS score when measurement started), madrs2 (MADRS when measurement stopped).
-'''
-
 sqlContext.sql(u"""
 	SELECT STRING(HASH(activity_data.*)) AS document_id,
 	INT(activity_data.activity) AS activity,
@@ -128,42 +99,6 @@ sqlContext.sql(u"""
 
 df = sqlContext.read.json('activity_data_score.json')
 df.registerTempTable('activity_data_score')
-
-'''
-+--------+
-|count(1)|
-+--------+
-| 1571706|
-+--------+
-
-sqlContext.sql(u"""
-	SELECT * FROM activity_data_score
-	WHERE label = 'control'
-	ORDER BY edu DESC
-	""").show()
-
-sqlContext.sql(u"""
-	SELECT * FROM activity_data_score
-	ORDER BY melanch DESC
-	""").show()
-'''
-
-
-'''
-DELETE /activity_data_score
-PUT /activity_data_score
-'''
-
-
-'''
-data = df.collect()
-data = sqlContext.sql(u"""
-	SELECT * FROM activity_data_score
-	WHERE person_id IN ('condition_20', 
-	'control_11', 'condition_13',
-	'control_1', 'condition_1')
-	""").collect()
-'''
 
 df1 = sqlContext.sql(u"""
 	SELECT * FROM activity_data_score
