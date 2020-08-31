@@ -27,6 +27,7 @@ bin/kibana
 ```bash
 git clone https://github.com/gaoyuanliang/depression_patient_activity_dashboard.git
 cd depression_patient_activity_dashboard
+pip3 install -r requirements.txt
 ```
 
 then you can view the kibana dashboard at http://localhost:5601
