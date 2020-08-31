@@ -1,10 +1,12 @@
-# Deep Depression Detector
+# Depression Activity Dashboard
 
-Building a deep depression detector to detect the mental depression status from a person's activity data.
+Building a Kibana dashboard to analyze the activity sensor data collected from patients suffering from depression. 
+
+The data introduction is at https://datasets.simula.no/depresjon/
 
 ## Instillation 
 
-### Instilling Elasticsearch
+### Instilling Elasticsearch and Kibana
 
 ```bash
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.7.1.tar.gz
@@ -12,8 +14,6 @@ tar -xf elasticsearch-6.7.1.tar.gz
 cd elasticsearch-6.7.1
 bin/elasticsearch
 ```
-
-### Instilling Kibana
 
 ```bash
 wget https://artifacts.elastic.co/downloads/kibana/kibana-6.7.1-darwin-x86_64.tar.gz
