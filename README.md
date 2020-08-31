@@ -52,3 +52,7 @@ python3 deep_depression_detector_data_visulize.py
 <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/ezgif-2-9ca41a12826a.gif" width="1000">
 
 <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/screencapture-localhost-5601-app-kibana-2020-08-31-21_42_09.png" width="500"> <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/screencapture-localhost-5601-app-kibana-2020-08-31-21_43_31.png" width="500">
+
+play with the dashboard to find the patterns of activities of the depression patients and health persons
+
+
