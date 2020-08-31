@@ -31,6 +31,14 @@ wget https://datasets.simula.no/depresjon/data/depresjon-dataset.zip
 unzip depresjon-dataset.zip
 ```
 
+## Process, merge, enrich, and ingest the data to Elastic search 
+
+```bash
+python3 deep_depression_detector_data_visulize.py
+```
+
+## Building the dashboard
+
 <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/screencapture-localhost-5601-app-kibana-2020-08-31-20_55_04.png" width="1000">
 
 <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/screencapture-localhost-5601-app-kibana-2020-08-31-19_46_33.png" width="1000">
