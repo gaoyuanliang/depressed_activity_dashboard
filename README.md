@@ -2,6 +2,26 @@
 
 Building a deep depression detector to detect the mental depression status from a person's activity data.
 
+## Instillation 
+
+### Instilling Elasticsearch
+
+```bash
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.7.1.tar.gz
+tar -xf elasticsearch-6.7.1.tar.gz
+cd elasticsearch-6.7.1
+bin/elasticsearch
+```
+
+### Instilling Kibana
+
+```bash
+wget https://artifacts.elastic.co/downloads/kibana/kibana-6.7.1-darwin-x86_64.tar.gz
+tar -xf kibana-6.7.1-darwin-x86_64.tar.gz
+cd kibana-6.7.1-darwin-x86_64
+bin/kibana
+```
+
 ## Downloading the data
 
 ```bash
