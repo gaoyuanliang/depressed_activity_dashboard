@@ -1,6 +1,7 @@
 import os
-from jessica_local_spark_building import sqlContext
 from elasticsearch import *
+from jessica_local_spark_building import sqlContext
+
 es=Elasticsearch([{'host':'localhost','port':9200}])
 
 condition_folder = list(os.walk("data/condition"))[0]
