@@ -22,6 +22,8 @@ cd kibana-6.7.1-darwin-x86_64
 bin/kibana
 ```
 
+then you can view the kibana dashboard at http://localhost:5601
+
 ## Downloading the data
 
 ```bash
