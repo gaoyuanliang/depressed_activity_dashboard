@@ -1,4 +1,4 @@
-# Depression Activity Dashboard
+# Depression Patient Activity Dashboard
 
 Building a Kibana dashboard to analyze the activity sensor data collected from patients suffering from depression. 
 
@@ -20,6 +20,12 @@ wget https://artifacts.elastic.co/downloads/kibana/kibana-6.7.1-darwin-x86_64.ta
 tar -xf kibana-6.7.1-darwin-x86_64.tar.gz
 cd kibana-6.7.1-darwin-x86_64
 bin/kibana
+```
+
+## Installing this package
+
+```bash
+git clone 
 ```
 
 then you can view the kibana dashboard at http://localhost:5601
