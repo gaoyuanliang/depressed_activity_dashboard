@@ -22,6 +22,8 @@ cd kibana-6.7.1-darwin-x86_64
 bin/kibana
 ```
 
+then you can view the kibana dashboard at http://localhost:5601
+
 ## Installing this package
 
 ```bash
@@ -29,8 +31,6 @@ git clone https://github.com/gaoyuanliang/depression_patient_activity_dashboard.
 cd depression_patient_activity_dashboard
 pip3 install -r requirements.txt
 ```
-
-then you can view the kibana dashboard at http://localhost:5601
 
 ## Downloading the data
 
