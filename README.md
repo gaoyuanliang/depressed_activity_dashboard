@@ -6,6 +6,8 @@ The data introduction is at https://datasets.simula.no/depresjon/
 
 ## Instillation 
 
+make sure you have Python 3.7.7 and java version "1.8.0_111"
+
 ### Instilling Elasticsearch and Kibana
 
 ```bash
