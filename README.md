@@ -4,7 +4,7 @@ Building a Kibana dashboard to analyze the activity sensor data collected from p
 
 The data introduction is at https://datasets.simula.no/depresjon/
 
-I used pyspark, spark SQL, and Elasticsearch to convert the raw csv tables to a dashboard
+I used pyspark, spark SQL, and Elasticsearch to convert the raw CSV tables to a dashboard
 
 <img src="https://raw.githubusercontent.com/gaoyuanliang/depression_patient_activity_dashboard/master/WX20200901-080209%402x.png" width="800">
 
@@ -60,5 +60,3 @@ Building the dashboard at http://localhost:5601 with index activity_data_score
 <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/screencapture-localhost-5601-app-kibana-2020-08-31-21_42_09.png" width="500"> <img src="https://raw.githubusercontent.com/gaoyuanliang/deep_depression_detector/master/screencapture-localhost-5601-app-kibana-2020-08-31-21_43_31.png" width="500">
 
 play with the dashboard to find the patterns of activities of the depression patients and health persons
-
-
