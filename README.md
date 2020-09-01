@@ -6,7 +6,7 @@ The data introduction is at https://datasets.simula.no/depresjon/
 
 I used pyspark, spark SQL, and Elasticsearch to convert the raw csv tables to a dashboard
 
-
+<img src="https://raw.githubusercontent.com/gaoyuanliang/depression_patient_activity_dashboard/master/WX20200901-080209%402x.png" width="800">
 
 ## Instillation 
 
