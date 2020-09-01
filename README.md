@@ -4,6 +4,10 @@ Building a Kibana dashboard to analyze the activity sensor data collected from p
 
 The data introduction is at https://datasets.simula.no/depresjon/
 
+I used pyspark, spark SQL, and Elasticsearch to convert the raw csv tables to a dashboard
+
+
+
 ## Instillation 
 
 make sure you have Python 3.7.7 and java version "1.8.0_111"
