@@ -19,5 +19,26 @@ inside docker try the service
 
 ```bash
 curl http://127.0.0.1:9200
+
+{
+  "name" : "lKx84gH",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "qxpQNOl4QQG7AdcodsgQTA",
+  "version" : {
+    "number" : "6.7.1",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "2f32220",
+    "build_date" : "2019-04-02T15:59:27.961366Z",
+    "build_snapshot" : false,
+    "lucene_version" : "7.7.0",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+
 curl http://127.0.0.1:5601
 ```
+
+
