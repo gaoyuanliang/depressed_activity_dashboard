@@ -1,3 +1,9 @@
+```
+mkdir jessica_dockder
+cd jessica_dockder
+wget https://raw.githubusercontent.com/gaoyuanliang/depression_patient_activity_dashboard/master/Dockerfile
+```
+
 download https://artifacts.elastic.co/downloads/kibana/kibana-6.7.1-linux-x86_64.tar.gz and unzip it to /Users/liangyu/Downloads/
 
 download https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.7.1.tar.gz and unzip it to /Users/liangyu/Downloads/
