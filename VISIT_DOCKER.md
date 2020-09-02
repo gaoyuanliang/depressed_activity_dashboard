@@ -14,3 +14,10 @@ in docker run:
 elasticsearch-6.7.1/bin/elasticsearch &
 kibana-6.7.1-linux-x86_64/bin/kibana &
 ```
+
+inside docker try the service 
+
+```bash
+curl http://127.0.0.1:9200
+curl http://127.0.0.1:5601
+```
